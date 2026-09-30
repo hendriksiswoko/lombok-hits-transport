@@ -1,0 +1,10 @@
+# Foto asli upload (versi kecil yang dipakai website ada di img/)
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.avif
+/*.zip
+
+# Pengaturan lokal editor / Claude
+.claude/

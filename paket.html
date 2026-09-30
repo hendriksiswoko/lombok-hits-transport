@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Detail Paket Tour | Lombok Hits Transport</title>
+<meta name="description" content="Detail paket tour Lombok: highlight, contoh jadwal, fasilitas yang termasuk, dan cara pesan via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tour">
+<!-- Header & footer otomatis dari js/main.js (renderLayout). Isi paket dari js/data.js (TOURS), dipilih lewat ?id= -->
+
+<main>
+  <section class="page-banner" id="td-banner">
+    <div class="container">
+      <p class="crumb"><a href="index.html" data-t="nav_home"></a> / <a href="tour.html" data-t="nav_tour"></a> / <span id="td-crumb"></span></p>
+      <h1 id="td-name"></h1>
+      <p id="td-tagline"></p>
+      <div class="chips" id="td-chips"></div>
+    </div>
+  </section>
+
+  <!-- DETAIL -->
+  <section class="section">
+    <div class="container td-layout" id="tour-detail"></div>
+  </section>
+
+  <!-- PAKET LAIN -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="td_other"></h2>
+        <div class="line"></div>
+      </div>
+      <div class="card-grid" id="td-other"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

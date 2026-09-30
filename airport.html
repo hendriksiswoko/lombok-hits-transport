@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Airport Transfer Lombok | Lombok Hits Transport</title>
+<meta name="description" content="Antar-jemput privat dari Bandara Internasional Lombok ke Kuta, Mataram, Senggigi, Selong Belanak, Senaru, Sembalun, Tetebatu dan lainnya. Mulai Rp 350.000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="airport">
+<!-- Header & footer otomatis dari js/main.js (renderLayout). Rute & harga dari js/data.js (AIRPORT) -->
+
+<main>
+  <section class="page-banner" style="background-image:url('img/hero/hero-3.jpg')">
+    <div class="container">
+      <p class="crumb"><a href="index.html" data-t="nav_home"></a> / <span data-t="nav_airport"></span></p>
+      <h1 data-t="air_title"></h1>
+      <p data-t="air_desc"></p>
+      <p class="air-price"><span data-t="price_start"></span> <strong id="air-min"></strong></p>
+      <div class="hero-btns"><a href="#" class="btn btn-cta wa-link" data-msg="msg_airport" data-t="btn_book_wa"></a></div>
+    </div>
+  </section>
+
+  <!-- AIRPORT ROUTES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="air_routes"></h2>
+        <div class="line"></div>
+        <p data-t="air_pickup"></p>
+        <div class="cur" role="group" aria-label="Currency">
+          <button type="button" data-cur="idr">IDR</button>
+          <button type="button" data-cur="usd">USD</button>
+        </div>
+      </div>
+      <div class="card-grid route-grid" id="air-list"></div>
+      <div class="air-other">
+        <p data-t="air_other"></p>
+        <a href="#" class="btn btn-gold wa-link" data-msg="msg_air_other" data-t="air_other_btn"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

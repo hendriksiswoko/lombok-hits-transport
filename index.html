@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lombok Hits Transport | Tour & Sewa Mobil Lombok</title>
+<meta name="description" content="Paket tour Lombok, sewa mobil + driver + bensin, dan airport transfer. Pink Beach, Gili, air terjun, Sasak tour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<!-- Header & footer otomatis dari js/main.js (renderLayout) -->
+<!-- Home = semua section dalam satu halaman; tiap section juga punya halaman sendiri -->
+
+<main>
+  <!-- HERO SLIDER -->
+  <section id="home" class="hero">
+    <div class="slides"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-sub" data-t="hero_sub"></p>
+      <h1 data-t="hero_title"></h1>
+      <p class="hero-desc" data-t="hero_desc"></p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-cta wa-link" data-msg="msg_general" data-t="btn_book_wa"></a>
+        <a href="#tour" class="btn btn-outline-light" data-t="btn_see_tour"></a>
+      </div>
+    </div>
+    <div class="dots"></div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="why_title"></h2>
+        <div class="line"></div>
+      </div>
+      <div class="why-grid" id="why-list"></div>
+    </div>
+  </section>
+
+  <!-- TOURS -->
+  <section id="tour" class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="tour_title"></h2>
+        <div class="line"></div>
+        <p data-t="tour_desc"></p>
+      </div>
+      <div class="card-grid" id="tour-list"></div>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section id="armada" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="fleet_title"></h2>
+        <div class="line"></div>
+        <p data-t="fleet_desc"></p>
+        <div class="cur" role="group" aria-label="Currency">
+          <button type="button" data-cur="idr">IDR</button>
+          <button type="button" data-cur="usd">USD</button>
+        </div>
+      </div>
+      <div class="card-grid" id="fleet-list"></div>
+    </div>
+  </section>
+
+  <!-- AIRPORT TRANSFER (ringkas, detail di airport.html) -->
+  <section class="airport" id="airport">
+    <div class="container airport-in">
+      <div>
+        <h2 data-t="air_title"></h2>
+        <p data-t="air_desc"></p>
+        <p class="air-price"><span data-t="price_start"></span> <strong id="air-min"></strong></p>
+      </div>
+      <div class="hero-btns">
+        <a href="airport.html" class="btn btn-outline-light" data-t="air_all"></a>
+        <a href="#" class="btn btn-cta wa-link" data-msg="msg_airport" data-t="btn_book_wa"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AIRPORT ROUTES -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="air_routes"></h2>
+        <div class="line"></div>
+        <p data-t="air_pickup"></p>
+      </div>
+      <div class="card-grid route-grid" id="air-list"></div>
+      <div class="air-other">
+        <p data-t="air_other"></p>
+        <a href="#" class="btn btn-gold wa-link" data-msg="msg_air_other" data-t="air_other_btn"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="tentang" class="section">
+    <div class="container about">
+      <div class="about-img">
+        <img src="img/driver.jpg" alt="Lalu Erfan Fadli">
+      </div>
+      <div class="about-text">
+        <h2 data-t="about_title"></h2>
+        <div class="line left"></div>
+        <p data-t="about_p1"></p>
+        <p data-t="about_p2"></p>
+        <p class="placeholder-text" data-t="about_p3"></p>
+        <div class="about-name">Lalu Erfan Fadli<small data-t="about_role"></small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="testi_title"></h2>
+        <div class="line"></div>
+        <p class="testi-score"><span class="stars">★★★★★</span> <b>5.0</b> · <span data-t="testi_count"></span></p>
+      </div>
+      <div class="testi-marquee"><div class="testi-track" id="testi-list"></div></div>
+      <div class="testi-cta"><a href="#" id="testi-more" class="btn btn-gold" target="_blank" rel="noopener" data-t="testi_more"></a></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galeri" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-t="gallery_title"></h2>
+        <div class="line"></div>
+      </div>
+      <div class="gallery" id="gallery-list"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="kontak" class="section bg-soft">
+    <div class="container contact">
+      <div>
+        <h2 data-t="contact_title"></h2>
+        <div class="line left"></div>
+        <p data-t="contact_desc"></p>
+        <ul class="contact-list">
+          <li><span>📱</span><div><b>WhatsApp</b><a class="wa-link" data-msg="msg_general" href="#">+62 819-9107-1786</a></div></li>
+          <li><span>📍</span><div><b data-t="contact_addr"></b>Kompleks BPTP NTB, Lombok Barat 83371, Nusa Tenggara Barat</div></li>
+          <li><span>🕒</span><div><b data-t="contact_hours"></b><span data-t="contact_hours_v"></span></div></li>
+        </ul>
+        <a href="#" class="btn btn-cta wa-link" data-msg="msg_general" data-t="btn_book_wa"></a>
+      </div>
+      <div class="map">
+        <iframe title="Lokasi Lombok Hits Transport" loading="lazy" src="https://maps.google.com/maps?q=-8.59650356,116.21942883&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

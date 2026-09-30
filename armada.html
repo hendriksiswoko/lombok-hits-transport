@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sewa Mobil + Driver Lombok | Lombok Hits Transport</title>
+<meta name="description" content="Sewa mobil di Lombok sudah termasuk driver dan bensin: Avanza, Fortuner, Innova, Hiace, Alphard. Juga antar-jemput bandara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="armada">
+<!-- Header & footer otomatis dari js/main.js (renderLayout) -->
+
+<main>
+  <section class="page-banner" style="background-image:url('img/hero/hero-1.jpg')">
+    <div class="container">
+      <p class="crumb"><a href="index.html" data-t="nav_home"></a> / <span data-t="nav_fleet"></span></p>
+      <h1 data-t="fleet_title"></h1>
+      <p data-t="fleet_desc"></p>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="cur" role="group" aria-label="Currency">
+          <button type="button" data-cur="idr">IDR</button>
+          <button type="button" data-cur="usd">USD</button>
+        </div>
+      </div>
+      <div class="card-grid" id="fleet-list"></div>
+    </div>
+  </section>
+
+  <!-- AIRPORT TRANSFER (ringkas, detail di airport.html) -->
+  <section class="airport">
+    <div class="container airport-in">
+      <div>
+        <h2 data-t="air_title"></h2>
+        <p data-t="air_desc"></p>
+        <p class="air-price"><span data-t="price_start"></span> <strong id="air-min"></strong></p>
+      </div>
+      <div class="hero-btns">
+        <a href="airport.html" class="btn btn-outline-light" data-t="air_all"></a>
+        <a href="#" class="btn btn-cta wa-link" data-msg="msg_airport" data-t="btn_book_wa"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
